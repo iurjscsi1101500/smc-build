@@ -1,6 +1,3 @@
-# smc-build
-smc-build
-
 # Dependencies
 Install these packages to build the kernel.
 
@@ -14,4 +11,9 @@ Install these packages to build the kernel.
 ```sudo dnf group install -y "Development Tools" && sudo dnf install -y autoconf bc bison cpio curl dkms dwarves elfutils-devel fakeroot flex gawk git kernel-wedge libcap-devel elfutils-libelf-devel libiberty ncurses-devel pciutils-devel openssl-devel systemd-devel openssl python3 rsync wget xz zstd```
 
 # Build
-Run `sudo ./build.sh`
+Run `sudo ./build.sh` in a folder that does not contain `build/` dir
+
+# Testing
+After rebooting run `sudo ./test.sh` in a folder where test.txt and test.sh dosent exist
+And DM me the test.txt file on reddit or at discord (@byte).
+
