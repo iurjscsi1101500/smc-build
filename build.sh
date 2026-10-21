@@ -10,6 +10,7 @@ cd linux
 git apply ../linux-t2-patches/30*.patch
 make localmodconfig
 ./scripts/config --disable CONFIG_SENSORS_APPLESMC
+./scripts/config --module CONFIG_IIO
 ./scripts/config --module CONFIG_MFD_MACSMC_CORE
 ./scripts/config --module CONFIG_MACSMC_ACPI
 ./scripts/config --module CONFIG_RTC_DRV_MACSMC
